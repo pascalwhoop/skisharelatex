@@ -1,19 +1,51 @@
-\section{Terminology}
-Before we start however, we would like to define a short list of terms used and what they represent. This is important because of the use sometimes mixed use of many different terms to describe similar concepts.
-
-
+\subsection{Terminology}
+Prior to presenting the literature reviewed, some terms will be defined. This is important because of the mixed use of many different terms to describe similar concepts.
 
 \begin{itemize}
+  \item \textbf{Digitalization:} Gartner describes it as the \emph{'use of digital technologies to change a business model and provide new revenue and value-producing opportunities; it is the process of moving to a digital business'} while \citeauthor{khan-digital:2016} simply calls it the \emph{'process of information conversion from the physical to the digital plane'}. The term \emph{digitization} is sometimes used as a synonym to digitalization but we will stick to the former as suggested by \citeauthor{khan-digital:2016}.
+  
   \item \textbf{Digital Transformation:} A term that is being described as \emph{'the use of technology to radically improve performance or reach of enterprises'}\cite{westerman2011digital} by the MIT Center for Digital Business can better be put in context by describing it as \emph{'the global accelerated process of technical adaptation by individuals, businesses, societies and nations, which comes as a result of digitalization'}\cite{bonnect2014leading,khan-digital:2016}.
 
-  \item \textbf{Digitalization:} Gartner describes it as the \emph{'use of digital technologies to change a business model and provide new revenue and value-producing opportunities; it is the process of moving to a digital business'} while \citeauthor{khan-digital:2016} simply calls it the \emph{'process of information conversion from the physical to the digital plane'}. The term \emph{digitization} is sometimes used as a synonym to digitalization but we will stick to the former as suggested by \citeauthor{khan-digital:2016}.
 
   \item \textbf{Internet of Things:} Citing \citeauthor{iot-def:2016}, the \ac{IoT} is \emph{'the network of physical objects that contain embedded technology to communicate and sense or interact with their internal states or the external environment'}.
 
   \item \textbf{Industry:} An industry is \emph{'defined as the set of all production units engaged primarily in the same or similar kinds of productive activity'}\cite{ISIC:2008}. This is important to differentiate from the German \emph{'Industrie'} which is largely equivalent to the more specific \emph{manufacturing industry}.
 
 
-  \item  \textbf{Industry 4.0:} Is derived from the German \emph{Industrie 4.0} and describes the German initiative with the same name. It is also sometimes used as a synonym for digitalization in the manufacturing sector \cite{McKinseydigitizationIndustrialSector:2015}, however mostly in the German speaking regions.
+  \item  \textbf{Industry 4.0:} Is derived from the German \emph{Industrie 4.0} and describes the German initiative with the same name. It is also sometimes used as a synonym for digitalization in the manufacturing sector \cite{McKinseydigitizationIndustrialSector:2015}, however mostly in the German speaking regions. We consider it as the \acl{DT} of the manufacturing sector.
 
-  \item  \textbf{Smart factory:} A subtype concept of \ac{DT}, especially focusing on factories.
+  \item \textbf{\acl{CPS}:} The term \ac{CPS} refers to the \emph{'tight conjoining of and coordination between computational and physical resources.'}. They \emph{'far exceed those of today in terms of adaptability, autonomy, efficiency, functionality, reliability, safety, and usability'}. They are expected to \emph{'provide large-scale, distributed coordination (e.g., automated traffic control), [be] highly efficient (e.g., zero-net energy buildings), augment human capabilities, and enhance societal well being'}  \cite{cps:nsf:2011}
+  
+  \item \textbf{Cloud Computing} is a \emph{'model for enabling ubiquitous, convenient, on-demand network access to a shared pool of configurable computing resources that can be rapidly provisioned and released with minimal management effort or service provider interaction'}\cite{Mell:2011:SND:2206223}.
 \end{itemize}
+
+\ac{IoT}, \ac{I4.0}, \ac{CPS} and Cloud Computing can be considered 
+Figure \ref{fig:terms} summarizes the different terms and their interrelation.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}[node distance=2cm]
+
+%first row
+\node (IoT) [process] {IoT};
+\node (CPS) [process, right of=IoT, xshift=0cm] {CPS};
+\node (CC) [process, right of=CPS, xshift=1cm] {Cloud Computing};
+%second,third row
+\node (D) [process, below of=CPS] {Digitalization};
+\node (DT) [process, below of=D, xshift=-1cm] {Digital Transformation};
+\node (I40) [process, right of=DT, xshift=1cm] {Industry 4.0};
+
+%arrows
+\draw [arrow] (IoT) -- (D);
+\draw [arrow] (CPS) -- node {lead to}  (D);
+\draw [arrow] (CC) -- (D);
+\draw [arrow] (D) -- node [xshift=0.7cm]{triggers}(DT);
+\draw [arrow] (D) -- (I40);
+
+
+\end{tikzpicture}
+\caption{Relation between terms} \label{fig:terms}
+\end{figure}
+
+%JO
+%TODO 1) Framework als Begriff klarstellen? 2) Maturity Model mit aufnehmen sobald wir dieses festgelegt haben
