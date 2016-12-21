@@ -1,12 +1,12 @@
-- sector industry, ... --> section (wie bei ISIC)
-- DONE Digitali_z_ation (regex suche und ersetzen in allen Dateien) // TODO PB
+- DONE ---- sector industry, ... --> section (wie bei ISIC)
+- DONE ----  Digitali_z_ation (regex suche und ersetzen in allen Dateien) // TODO PB
 - Annotationen aus Dokument 1&2 handschriftlich Pascal // TODO PB
 - Grammar check von Sharelatex durchlauf einmal alles rot untermalte checken
 - Quellen prüfen ob Namen richtig mit Foobar and Lümmel and Washington damit nicht A. B. D. E. tommason dabei raus kommt 
 
 Vorschläge Jonathan:
-- DONE focusing vs. focussing
-- DONE focused vs. focussed
-- organisation vs. organization
-- DONE Zitieren von Quotes vereinheitlichen "" vs. '' --> _direktes_ zitat: \emph{"quote"} alles mit " " und kursiv.  // TODO PB  
+- DONE ----  focusing vs. focussing
+- DONE ----  focused vs. focussed
+- DONE ----  organisation vs. organization
+- DONE ----  Zitieren von Quotes vereinheitlichen "" vs. '' --> _direktes_ zitat: \emph{"quote"} alles mit " " und kursiv.  // TODO PB  
 - Figure Quellenangabe from [X] wenn man das Bild komplett "kopiert" hat, ansonsten \cite{X} reicht aus (?)
