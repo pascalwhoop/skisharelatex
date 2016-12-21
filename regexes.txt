@@ -1,0 +1,5 @@
+grep -lr focussed *.tex | xargs sed -i "" 's/focussed/focused/g'
+grep -lr focussing . | xargs sed -i "" 's/focussing/focusing/g'
+grep -lr organisation *.tex | xargs sed -i "" 's/organisation/organization/g'
+egrep -lr "\\\emph{'.*'}" *.tex |  xargs sed -Ei "" "s/\\\emph{['\"]{1}([^'\"]*)['\"]{1}}/\\\emph\{\"\1\"\}/g"
+
