@@ -1,8 +1,8 @@
-- DONE ---- sector industry, ... --> section (wie bei ISIC)
+- DONE ----  sector industry, ... --> section (wie bei ISIC)
 - DONE ----  Digitali_z_ation (regex suche und ersetzen in allen Dateien) // TODO PB
-- Annotationen aus Dokument 1&2 handschriftlich Pascal // TODO PB
-- Grammar check von Sharelatex durchlauf einmal alles rot untermalte checken
-- Quellen prüfen ob Namen richtig mit Foobar and Lümmel and Washington damit nicht A. B. D. E. tommason dabei raus kommt 
+- DONE ----  Annotationen aus Dokument 1&2 handschriftlich Pascal // TODO PB
+- DONE ----  Grammar check von Sharelatex durchlauf einmal alles rot untermalte checken
+- DONE ----  Quellen prüfen ob Namen richtig mit Foobar and Lümmel and Washington damit nicht A. B. D. E. tommason dabei raus kommt --> Wenn wir es komplett richtig machen wollen, sind einige Angaben unkonsistent, oder? z.B. haben manche webpage bib einträge einen titel, andere nicht. Oder ist das nicht relevant?
 
 Vorschläge Jonathan:
 - DONE ----  focusing vs. focussing
@@ -10,3 +10,4 @@ Vorschläge Jonathan:
 - DONE ----  organisation vs. organization
 - DONE ----  Zitieren von Quotes vereinheitlichen "" vs. '' --> _direktes_ zitat: \emph{"quote"} alles mit " " und kursiv.  // TODO PB  
 - Figure Quellenangabe from [X] wenn man das Bild komplett "kopiert" hat, ansonsten \cite{X} reicht aus (?)
+    ---- ich habe es hier jetzt kombiniert also from \citeauthor{} cite[]{} 
